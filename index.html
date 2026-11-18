@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>S.M.H.S.S - Saliyar Mahajana Higher Secondary School</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: sans-serif; }
+body { background-color: #f0f4f8; color: #333; line-height: 1.6; }
+header { background: linear-gradient(135deg, #0f172a, #1e3a8a); color: white; padding: 25px 15px; text-align: center; border-bottom: 4px solid #facc15; }
+header .short-name { background: #facc15; color: #0f172a; display: inline-block; padding: 4px 12px; font-weight: bold; border-radius: 20px; font-size: 14px; margin-bottom: 8px; }
+header h1 { font-size: 22px; margin-bottom: 5px; }
+header h2 { font-size: 18px; font-weight: normal; color: #e2e8f0; margin-bottom: 5px; }
+header p { font-size: 14px; color: #cbd5e1; }
+.banner { background: #1d4ed8; color: white; text-align: center; padding: 25px 15px; }
+.banner h3 { font-size: 20px; margin-bottom: 8px; }
+.btn { display: inline-block; background: #facc15; color: #0f172a; padding: 10px 22px; text-decoration: none; font-weight: bold; border-radius: 6px; margin-top: 10px; }
+.container { max-width: 850px; margin: 20px auto; padding: 0 15px; }
+.features { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; margin-bottom: 25px; }
+.card { background: white; padding: 18px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.08); text-align: center; border-top: 3px solid #1e3a8a; }
+.card h4 { color: #1e3a8a; margin-bottom: 6px; font-size: 17px; }
+.card p { font-size: 14px; color: #475569; }
+.form-box { background: white; padding: 25px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+.form-box h2 { text-align: center; color: #1e3a8a; margin-bottom: 5px; font-size: 21px; }
+.form-box .sub-text { text-align: center; color: #64748b; font-size: 13px; margin-bottom: 20px; }
+.form-group { margin-bottom: 15px; }
+label { display: block; font-weight: bold; margin-bottom: 5px; font-size: 14px; color: #1e293b; }
+input, select, textarea { width: 100%; padding: 11px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 15px; background: #f8fafc; }
+button { width: 100%; background: #16a34a; color: white; border: none; padding: 14px; font-size: 16px; font-weight: bold; border-radius: 6px; cursor: pointer; margin-top: 5px; }
+footer { background: #0f172a; color: white; text-align: center; padding: 20px 15px; margin-top: 30px; font-size: 13px; }
+footer p { margin-bottom: 5px; }
+</style>
+</head>
+<body>
+
+<header>
+<div class="short-name">S.M.H.S.S - ARUPPUKOTTAI</div>
+<h1>SALIYAR MAHAJANA HIGHER SECONDARY SCHOOL</h1>
+<h2>சாலியர் மகாஜன மேல்நிலைப் பள்ளி</h2>
+<p>அருப்புக்கோட்டை, விருதுநகர் மாவட்டம் - 626101</p>
+</header>
+
+<div class="banner">
+<h3>2026 - 2027 கல்வியாண்டு மாணவர் சேர்க்கை (Online Admission)</h3>
+<p>6-ஆம் வகுப்பு முதல் 12-ஆம் வகுப்பு வரை ஆன்லைனில் விண்ணப்பிக்கலாம்.</p>
+<a href="#admission-form" class="btn">விண்ணப்பப் படிவம் (Apply Now)</a>
+</div>
+
+<div class="container">
+<div class="features">
+<div class="card">
+<h4>சிறந்த கல்வித் தரம்</h4>
+<p>அனுபவம் வாய்ந்த ஆசிரியர்கள் மற்றும் 100% தேர்ச்சி இலக்கு.</p>
+</div>
+<div class="card">
+<h4>நவீன ஆய்வகங்கள்</h4>
+<p>அறிவியல், கணினி ஆய்வகம் மற்றும் விரிவான நூலக வசதி.</p>
+</div>
+<div class="card">
+<h4>விளையாட்டு & ஒழுக்கம்</h4>
+<p>NCC, NSS, விளையாட்டுப் போட்டிகள் மற்றும் தனித்திறன் பயிற்சிகள்.</p>
+</div>
+</div>
+
+<div class="form-box" id="admission-form">
+<h2>ஆன்லைன் அட்மிஷன் விண்ணப்பப் படிவம்</h2>
+<p class="sub-text">கீழ்க்கண்ட விவரங்களைப் பூர்த்தி செய்து சமர்ப்பிக்கவும்</p>
+
+<form id="smhssForm">
+<div class="form-group">
+<label>மாணவர் / மாணவியின் முழுப் பெயர் *</label>
+<input type="text" id="studentName" placeholder="உதாரணம்: க. அருண் குமார்" required>
+</div>
+
+<div class="form-group">
+<label>பாலினம் (Gender) *</label>
+<select id="gender" required>
+<option value="">-- தேர்ந்தெடுக்கவும் --</option>
+<option value="ஆண் (Male)">ஆண் (Male)</option>
+<option value="பெண் (Female)">பெண் (Female)</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>பிறந்த தேதி (Date of Birth) *</label>
+<input type="date" id="dob" required>
+</div>
+
+<div class="form-group">
+<label>சேர விரும்பும் வகுப்பு (Class) *</label>
+<select id="studentClass" onchange="toggleGroupField()" required>
+<option value="">-- வகுப்பைத் தேர்ந்தெடுக்கவும் --</option>
+<option value="6th Std">6-ஆம் வகுப்பு (6th Std)</option>
+<option value="7th Std">7-ஆம் வகுப்பு (7th Std)</option>
+<option value="8th Std">8-ஆம் வகுப்பு (8th Std)</option>
+<option value="9th Std">9-ஆம் வகுப்பு (9th Std)</option>
+<option value="10th Std">10-ஆம் வகுப்பு (10th Std)</option>
+<option value="11th Std">11-ஆம் வகுப்பு (11th Std)</option>
+<option value="12th Std">12-ஆம் வகுப்பு (12th Std)</option>
+</select>
+</div>
+
+<div class="form-group" id="groupDiv" style="display: none;">
+<label>11 & 12-ஆம் வகுப்பு பாடப்பிரிவு (Group) *</label>
+<select id="group">
+<option value="பாடப்பிரிவு இல்லை">பாடப்பிரிவு இல்லை</option>
+<option value="Maths - Biology">Maths - Biology (கணிதம் - உயிரியல்)</option>
+<option value="Maths - Computer Science">Maths - Computer Science (கணிதம் - கணினி அறிவியல்)</option>
+<option value="Pure Science">Pure Science (அறிவியல் பிரிவு)</option>
+<option value="Commerce & Accountancy">Commerce & Accountancy (வணிகவியல்)</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>பயிற்று மொழி (Medium) *</label>
+<select id="medium" required>
+<option value="தமிழ் வழி (Tamil Medium)">தமிழ் வழி (Tamil Medium)</option>
+<option value="ஆங்கில வழி (English Medium)">ஆங்கில வழி (English Medium)</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>முன்பு படித்த பள்ளியின் பெயர் *</label>
+<input type="text" id="prevSchool" placeholder="பள்ளியின் பெயரை உள்ளிடவும்" required>
+</div>
+
+<div class="form-group">
+<label>பெற்றோர் / பாதுகாவலர் பெயர் *</label>
+<input type="text" id="parentName" placeholder="தந்தை அல்லது தாயின் பெயர்" required>
+</div>
+
+<div class="form-group">
+<label>தொலைபேசி எண் (Mobile / WhatsApp) *</label>
+<input type="tel" id="phone" placeholder="10 இலக்க மொபைல் எண்" pattern="[0-9]{10}" required>
+</div>
+
+<div class="form-group">
+<label>முழு முகவரி (Address) *</label>
+<textarea id="address" rows="3" placeholder="தெரு, ஊர், அருப்புக்கோட்டை வட்டம்..." required></textarea>
+</div>
+
+<button type="submit">விண்ணப்பத்தைச் சமர்ப்பி (Submit via WhatsApp)</button>
+</form>
+</div>
+</div>
+
+<footer>
+<p><strong>Saliyar Mahajana Higher Secondary School (S.M.H.S.S)</strong></p>
+<p>அருப்புக்கோட்டை, விருதுநகர் மாவட்டம், தமிழ்நாடு - 626101</p>
+<p>© 2026 S.M.H.S.S Aruppukottai. All Rights Reserved.</p>
+</footer>
+
+<script>
+function toggleGroupField() {
+  var cls = document.getElementById("studentClass").value;
+  var groupDiv = document.getElementById("groupDiv");
+  if (cls === "11th Std" || cls === "12th Std") {
+    groupDiv.style.display = "block";
+  } else {
+    groupDiv.style.display = "none";
+  }
+}
+
+document.getElementById("smhssForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+  var schoolWhatsAppNumber = "919876543210";
+  var name = document.getElementById("studentName").value;
+  var gender = document.getElementById("gender").value;
+  var dob = document.getElementById("dob").value;
+  var cls = document.getElementById("studentClass").value;
+  var grp = document.getElementById("group").value;
+  var med = document.getElementById("medium").value;
+  var prev = document.getElementById("prevSchool").value;
+  var parent = document.getElementById("parentName").value;
+  var phone = document.getElementById("phone").value;
+  var addr = document.getElementById("address").value;
+
+  var message = "*S.M.H.S.S அருப்புக்கோட்டை - புதிய அட்மிஷன் விண்ணப்பம்*%0A%0A" +
+    "*மாணவர் பெயர்:* " + name + "%0A" +
+    "*பாலினம்:* " + gender + "%0A" +
+    "*பிறந்த தேதி:* " + dob + "%0A" +
+    "*வகுப்பு:* " + cls + "%0A" +
+    "*பாடப்பிரிவு:* " + grp + "%0A" +
+    "*பயிற்று மொழி:* " + med + "%0A" +
+    "*முந்தைய பள்ளி:* " + prev + "%0A" +
+    "*பெற்றோர் பெயர்:* " + parent + "%0A" +
+    "*தொலைபேசி:* " + phone + "%0A" +
+    "*முகவரி:* " + addr;
+
+  var url = "https://wa.me" + schoolWhatsAppNumber + "?text=" + message;
+  window.open(url, "_blank");
+});
+</script>
+
+</body>
+</html>
